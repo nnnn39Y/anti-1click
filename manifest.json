@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "anti-1click",
+  "version": "1.3.0",
+  "description": "Amazon の「今すぐ買う」ボタンを「今すぐ買わない」という表示に置き換えます。",
+  "permissions": ["storage"],
+  "icons": {
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "anti-1click のオン・オフ",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.co.jp/*",
+        "https://www.amazon.com/*"
+      ],
+      "css": ["style.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

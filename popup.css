@@ -1,0 +1,13 @@
+body {
+  box-sizing: border-box;
+  width: 260px;
+  margin: 0;
+  color: #232f3e;
+  font: 14px/1.4 Arial, sans-serif;
+}
+
+main { padding: 16px; }
+h1 { margin: 0 0 16px; font-size: 16px; }
+.setting { display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; }
+.setting input { width: 20px; height: 20px; margin: 0; accent-color: #ff9900; cursor: pointer; }
+#status { min-height: 20px; margin: 12px 0 0; color: #565959; font-size: 12px; }

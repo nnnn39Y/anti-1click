@@ -1,0 +1,32 @@
+/* The root class lets the popup restore the original page instantly. */
+html.anti-one-click-active :is(
+  #buy-now-button,
+  input[name="submit.buy-now"],
+  #buyNow,
+  #oneClickBuyButton,
+  #one-click-button,
+  input[name="submit.one-click-order"],
+  #turbo-checkout-pyo-button,
+  .a-button-oneclick,
+  #buyNow_feature_div,
+  .anti-one-click-hidden
+) {
+  display: none !important;
+}
+
+.anti-one-click-label {
+  display: none !important;
+  padding: 8px 12px !important;
+  color: #565959 !important;
+  background: #f0f2f2 !important;
+  border: 1px solid #adb1b8 !important;
+  border-radius: 20px !important;
+  font: 14px/20px Arial, sans-serif !important;
+  text-align: center !important;
+  cursor: default !important;
+  user-select: none !important;
+}
+
+html.anti-one-click-active .anti-one-click-label {
+  display: block !important;
+}
